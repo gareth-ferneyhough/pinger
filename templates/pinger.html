@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="stats">
+		<div>
+			<label>Current time: </label><span id="time">{{ time_string }}</span>
+		</div>
+		<div>
+			<label>Pinging: </label><span>{{ ip }}</span>
+		</div>
+		<div>
+			<label>Interval (seconds): </label><span>{{ interval }}</span>
+		</div>
+		<div>
+			<label>Status: </label><span class="bg-success">Alive</span>
+		</div>
+		<div>
+			<label>First ping: </label><span>{{ first_ping }}</span>
+		</div>
+		<div>
+			<label>Last ping: </label><span>{{ last_ping }}</span>
+		</div>
+	</div>
+{% endblock %}

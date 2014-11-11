@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+	<form action="do_ping" method="post">
+		<div>
+			<label for="ip">IP to ping:</label>
+			<input type="text" id="ip" name="ip"/>
+		</div>				
+		<div>
+			<label for="interval">Interval (seconds):</label>
+			<input type="text" id="interval" name="interval"/>			
+		</div>	
+		<div class="buttonHolder">	
+			<button class="btn btn-default" type="submit">Start</button>				
+		</div>
+	</form>
+{% endblock %}
